@@ -78,7 +78,7 @@ signed main()
 	vector<int> a(n + 1);
 	for(int i = 1; i <= n; i ++) cin >>a[i];
 	
-	auto b = a;
+	vector<int> b = a;
 	sort(b.begin() + 1, b.end());
 	b.erase(unique(b.begin() + 1, b.end()), b.end());
 	
